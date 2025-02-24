@@ -581,7 +581,7 @@ input {
 /* iframe 크기 및 스타일 */
 #gradio-iframe {
   width: 100%;
-  height: 550px;             
+  height: 800px;             
   border: 1px solid #ccc;
   margin-top: 1rem;
 }
