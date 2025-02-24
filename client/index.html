@@ -418,6 +418,29 @@
         <!--=============== SWIPER JS ===============-->
         <script src="assets/js/swiper-bundle.min.js"></script>
 
+        <!--=============== 언어 버튼 관련 스크립트 ===============-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const buttons = document.querySelectorAll(".lang-btn");
+                const iframe = document.getElementById("gradio-iframe");
+                const langUrls = {
+                        korean: "https://f897024533094c1670.gradio.live",
+                        japanese: "https://d766eb5c573c4274c0.gradio.live",
+                        english: "https://416f52faaa97a28849.gradio.live"
+                    };
+         
+                 buttons.forEach(button => {
+                     button.addEventListener("click", function () {
+                            const path = this.getAttribute("data-path");
+                            if (langUrls[path]) {
+                                iframe.src = langUrls[path]; // 선택된 언어에 맞는 Gradio URL 설정
+                            }
+                        });
+                    });
+                });
+            </script>
+ 
+        
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
     </body>
