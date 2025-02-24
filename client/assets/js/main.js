@@ -183,7 +183,7 @@ if (langButtons && langIframe) {
     btn.addEventListener('click', () => {
       const path = btn.getAttribute('data-path') || '';
       // 실제 서버 주소 예: 'http://127.0.0.1:8000/korean'
-      langIframe.src = `http://127.0.0.1:8000/${path}`;
+      langIframe.src = `http://52.231.38.95:8080/${path}`;
     });
   });
 }
