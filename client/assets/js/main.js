@@ -1,3 +1,9 @@
+fetch("https://your-gradio-backend.azurewebsites.net/proxy_kamis")
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error("Error:", error));
+
+
 /*==================== SHOW MENU ====================*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -50,6 +56,8 @@ let swiper = new Swiper(".section1__container", {
         rotate: 0,
     },
 })
+
+
 
 /*==================== VIDEO ====================*/
 const videoFile = document.getElementById('video-file'),
