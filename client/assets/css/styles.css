@@ -452,7 +452,7 @@ input {
 .about__img-two:hover {
   transform: var(--img-scale);
 }
-
+/*
 /*=============== Section 1 ===============*/
 .section1__card {
   position: relative;
@@ -493,7 +493,7 @@ input {
 .swiper-container-3d .swiper-slide-shadow-right {
   background-image: none;
 }
-
+*/
 /*=============== Section 2 ===============*/
 .section2__container {
   row-gap: 2.5rem;
@@ -610,7 +610,7 @@ input {
 .video__button-icon {
   font-size: 1.2rem;
 }
-
+/*
 /*=============== Section 3 ===============*/
 .section3__card, .section3__img {
   height: 230px;
@@ -685,7 +685,7 @@ input {
   bottom: 0;
   padding: .75rem 1rem;
 }
-
+*/
 /*=============== SUBSCRIBE ===============*/
 .subscribe__bg {
   background-color: var(--first-color-second);
